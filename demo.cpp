@@ -43,7 +43,7 @@ struct Tetrimino {
     }
 
     void create() {
-	fig = 1;
+	fig = 1 + rand() % 7;
 	for (int i = 0; i < 4; ++i) {
 	    next[i].x = figures[fig][i] % 2;
 	    next[i].y = figures[fig][i] / 2;
